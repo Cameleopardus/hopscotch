@@ -870,7 +870,6 @@
       if (callback) {
         callback(!step.fixedElement);
       }
-      console.log("render", this);
       if (step.appendTo){
         document.querySelector(step.appendTo).appendChild(this.element);
       }
