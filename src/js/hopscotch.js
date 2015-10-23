@@ -854,6 +854,9 @@
       if (callback) {
         callback(!step.fixedElement);
       }
+      if (step.appendTo){
+        document.querySelector(step.appendTo).appendChild(this.element);
+      }
 
       return this;
     },
